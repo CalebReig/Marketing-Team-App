@@ -1,0 +1,7 @@
+pandas 
+pickleshare==0.7.5
+plotly
+scikit-learn
+scipy 
+streamlit==1.2.0
+xgboost==1.5.0
