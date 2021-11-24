@@ -50,7 +50,8 @@ def app():
     st.write('Enter the information of a new customer to predict if the ' + \
              'customer will respond to marketing.')
     new_cus = customer_form()
-    st.write(load_predict(new_cus))
+    prediction = load_predict(new_cus)
+    st.write('Prediction: ' + prediction)
 
 
 
