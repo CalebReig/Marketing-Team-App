@@ -37,8 +37,16 @@ class MultiApp:
             "title": title,
             "function": func
         })
+    
+    def setup(self):
+        folder = 'items'
+        img = 'favicon-32x32.png'
+        favicon_path = os.path.join(folder, img)
+        st.set_page_config("XCorp Marketing Dashboard", page_icon=favicon_path,
+                           initial_sidebar_state='expanded')
 
     def run(self):
+        self.setup()
         app = st.sidebar.radio(
         #app = st.selectbox(
             'Navigation',
